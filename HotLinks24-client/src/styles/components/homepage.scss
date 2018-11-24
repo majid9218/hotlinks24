@@ -1,0 +1,96 @@
+.row{
+    top: $top-size;
+}
+
+.linkTop{
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-btn{
+    align-self: flex-start;
+    font-style: italic;
+    color: gray;
+}
+
+.delete-btn:hover{
+    cursor: pointer;
+    color: darkgrey;
+}
+
+.linkHeader img{
+    border-radius: 50px;
+    margin-right: $xs-size;
+}
+
+.linkHeader{
+    display: flex;
+}
+
+.message-area > p{
+    margin-top: $s-size;
+}
+
+.linkContainer{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgray;
+    color: black;
+}
+
+.linkContainer:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.linkContainer:hover{
+    cursor: pointer;
+}
+
+.linkContainer > div{
+    height: 100px;
+    display: flex;
+}
+
+.linkContainer div > h3{
+    height: 100px;
+    font-size: $s-size;
+    padding: $xs-size;
+    overflow: hidden;
+}
+
+.linkContainer div > img{
+    width: 100px;
+    height: 100px;
+    border: 0.5px solid lightgray;
+}
+
+.linkContainer > p{
+    border-top: 0.5px ridge lightgray;
+    padding: 0.3rem;
+    font-size: 0.8rem;
+    color: darkgrey;
+}
+
+.loading{
+    color: $dark-coffee;
+}
+
+@media screen and (max-width: 992px){
+    .linkContainer div > h3{
+        font-size: 0.8rem;
+    }
+    .linkContainer > p{
+        font-size: $xs-size;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .linkContainer div > h3{
+        font-size: 0.65rem;
+    }
+    .linkContainer > p{
+        font-size: 0.5rem;
+    }
+}
+

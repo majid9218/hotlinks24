@@ -1,0 +1,53 @@
+{
+  "name": "hotlinks24-client",
+  "version": "1.0.0",
+  "description": "HotLinks24 client side",
+  "main": "index.js",
+  "author": "abdelmajid abdellatif",
+  "license": "MIT",
+  "scripts": {
+    "build:dev": "webpack",
+    "build:pro": "webpack -p --env production",
+    "server": "webpack-dev-server",
+    "start": "node server/server.js",
+    "heroku-postbuild": "yarn run build:pro"
+  },
+  "engines": {
+    "node": "9.4.0"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "express": "^4.16.3",
+    "express-http-proxy": "^1.2.0",
+    "file-loader": "^1.1.11",
+    "http-proxy": "^1.17.0",
+    "jwt-decode": "^2.2.0",
+    "mini-css-extract-plugin": "^0.4.2",
+    "moment": "^2.22.2",
+    "node-sass": "^4.9.2",
+    "normalize.css": "^8.0.0",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-moment": "^0.7.9",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.0",
+    "webpack": "^4.16.5",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "devDependencies": {
+    "webpack-cli": "^3.1.0"
+  }
+}

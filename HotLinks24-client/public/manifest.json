@@ -1,0 +1,16 @@
+{
+    "short_name": "HotLinks24",
+    "name": "HotLinks-24",
+    "icons": [
+      {
+        "src": "/mini-logo.png",
+        "type": "image/png",
+        "sizes": "162x162"
+      }
+    ],
+    "start_url": "/index.html",
+    "background_color": "#F7F8E0",
+    "display": "standalone",
+    "scope": ".",
+    "theme_color": "#B18904"
+  }

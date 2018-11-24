@@ -1,0 +1,52 @@
+body{
+    background-color: $light-coffee;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+//reset bootstrap
+
+
+.btn-custom {
+    color: white;
+    font-weight: 500;
+    background-color: $dark-coffee;
+    border-color: $dark-coffee;
+    margin: $l-size 0;
+    margin-right: $m-size;
+  }
+  .btn-custom:hover,
+  .btn-custom:focus,
+  .btn-custom:active,
+  .btn-custom.active {
+    background-color: $dark-coffee;
+    border-color: $dark-coffee;
+    opacity: 0.75;
+    box-shadow: none;
+  }
+
+.btn-outline-custom {
+    width: 100%;
+    color: $dark-coffee;
+    font-weight: 500;
+    background-color: $light-coffee;
+    border-color: $dark-coffee;
+    margin-bottom: $s-size;
+    margin-top: $m-size;
+    opacity: 0.5;
+}
+.btn-outline-custom:hover{
+    opacity: 1;
+}
+
+.btn-outline-custom:focus,
+.btn-outline-custom:active{
+    box-shadow: none;
+}
+
+
+.list-group-item:last-child{
+    margin-bottom: $xs-size;
+}
+
+//general
+

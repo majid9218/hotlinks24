@@ -1,0 +1,36 @@
+.on-boarding > .navbar{
+    background-color: $dark-coffee;
+}
+
+.navbar{
+    margin-bottom: $s-size;
+}
+
+.navbar a{
+    font-weight: bold;
+    color: white;
+}
+
+.navbar a:hover{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.navbar-brand > img{
+    display: inline-block;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-right: 5px;
+    border-radius: 2px;
+}
+
+ul.nav.navbar-nav li{
+    margin: 0 $xs-size;
+    font-weight: 700;
+    color: white;
+}
+
+ul.nav.navbar-nav li:hover{
+    text-decoration: underline;
+}

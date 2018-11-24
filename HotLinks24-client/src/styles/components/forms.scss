@@ -1,0 +1,44 @@
+form {
+    text-align: start;
+}
+
+.form-control:focus {
+    border-color: $dark-coffee;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(219,169,1, 0.6);
+}
+
+.pass .form-control{
+    width:50%;
+}
+
+.newForm{
+    margin-top: $xl-size;
+}
+
+.new.form-control{
+    margin: $xs-size 0;
+}
+
+.single-image-uploader{
+    background-color: white;
+    border: 1px solid lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $s-size 0;
+}
+
+.single-image-uploader > .size-error{
+    font-weight: 500;
+    color: $dark-coffee;
+    font-style: italic;
+    margin-top: $xs-size;
+}
+
+@media screen and (max-width: 500px){
+    .single-image-uploader{
+        font-size: $xs-size;
+        padding: $xs-size;
+    }
+}
