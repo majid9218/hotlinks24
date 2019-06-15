@@ -12,13 +12,19 @@ exports.createHotLink = async function(req, res, next){
 
         let {body: html, url} = await got(req.body.link);
         let metadata = await metascraper({html, url});
-
+        
+        const text = typeof(req.body.text) == 'string' ? req.body.text : '';
+        const link = typeof(req.body.link) == 'string' ? req.body.text : 'https://example.com/';
+        const title = typeof(metadata.title) == 'string' ? metadata.title : '';
+        const description = typeof(metadata.description) == 'string' ? metadata.description : '';
+        const image = typeof(metadata.image) == 'string' ? metadata.image : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Color_icon_white.svg/800px-Color_icon_white.svg.png';
+        
         let newHotLink = await db.Hotlink.create({
-            text: req.body.text,
-            link: req.body.link,
-            title: metadata.title,
-            description: metadata.description,
-            image: metadata.image,
+            text: text,
+            link: link,
+            title: title,
+            description: description,
+            image: image,
             user: req.params.id
         });
         let user = await db.User.findById(req.params.id);
