@@ -14,7 +14,7 @@ exports.createHotLink = async function(req, res, next){
         let metadata = await metascraper({html, url});
         
         const text = typeof(req.body.text) == 'string' ? req.body.text : '';
-        const link = typeof(req.body.link) == 'string' ? req.body.text : 'https://example.com/';
+        const link = typeof(req.body.link) == 'string' ? req.body.link : 'https://example.com/';
         const title = typeof(metadata.title) == 'string' ? metadata.title : '';
         const description = typeof(metadata.description) == 'string' ? metadata.description : '';
         const image = typeof(metadata.image) == 'string' ? metadata.image : 'https://upload.wikimedia.org/wikipedia/commons/thumb/5/57/Color_icon_white.svg/800px-Color_icon_white.svg.png';
