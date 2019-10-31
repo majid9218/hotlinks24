@@ -20,7 +20,7 @@
     "metascraper-description": "^4.0.2",
     "metascraper-image": "^4.0.2",
     "metascraper-title": "^4.0.2",
-    "mongoose": "^5.2.6",
+    "mongoose": "^5.7.5",
     "mongoose-ttl": "0.0.3",
     "mongoose-type-url": "^1.0.4"
   }
