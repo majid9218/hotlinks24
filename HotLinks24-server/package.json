@@ -15,7 +15,7 @@
     "dotenv": "^6.0.0",
     "express": "^4.16.3",
     "got": "^9.2.0",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "metascraper": "^4.0.1",
     "metascraper-description": "^4.0.2",
     "metascraper-image": "^4.0.2",
